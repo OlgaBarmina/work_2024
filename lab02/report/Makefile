@@ -21,7 +21,7 @@ BIB_OPTIONS = --citeproc
 %.pdf: %.md
 	-pandoc "$<" $(FILTERS) $(PDF_ENGINE) $(PDF_OPTIONS) $(BIB_OPTIONS) $(FORMAT_OPTIONS) $(OPTIONS) -o "$@"
 
-all: $(FILES)
+all:	$(FILES)
 
 
 clean:
